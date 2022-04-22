@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>like counter</title>
+</head>
+
+<style type="text/css">
+	*{
+		font-family: consolas;
+	}
+	#main-counter{
+		border: 1px solid black;
+		padding: 10px;
+	}
+	#sub-counter{
+		margin-top: 50px;
+		/*border: 1px solid black;*/
+		padding: 10px;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 90px);
+		grid-gap: 10px;
+		justify-content: center;
+	}
+	input{
+		width: 40px;
+	}
+	#counterCont{
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 45.33px);
+		grid-gap: 10px;
+	}
+	#counterCont > button > input{
+		display: none;
+	}
+	#unpolished{
+		display: none;
+	}
+</style>
+
+
+<body>
+
+	<h1>Like Counter</h1>
+	<div id="main-counter">
+		<label>Number of likes:</label>
+		<input type="number" id="displayLikes" value="0" readonly>
+	</div>
+	<div id="counterCont">
+		<button id="btn1" onclick="liked('like1', 'btn1')">Like<input type="number" id="like1" value="0" readonly></button>
+		<button id="btn2" onclick="liked('like2', 'btn2')">Like<input type="number" id="like2" value="0" readonly></button>
+		<button id="btn3" onclick="liked('like3', 'btn3')">Like<input type="number" id="like3" value="0" readonly></button>
+		<button id="btn4" onclick="liked('like4', 'btn4')">Like<input type="number" id="like4" value="0" readonly></button>
+		<button id="btn5" onclick="liked('like5', 'btn5')">Like<input type="number" id="like5" value="0" readonly></button>
+		<button id="btn6" onclick="liked('like6', 'btn6')">Like<input type="number" id="like6" value="0" readonly></button>
+		<button id="btn7" onclick="liked('like7', 'btn7')">Like<input type="number" id="like7" value="0" readonly></button>
+		<button id="btn8" onclick="liked('like8', 'btn8')">Like<input type="number" id="like8" value="0" readonly></button>
+		<button id="btn9" onclick="liked('like9', 'btn9')">Like<input type="number" id="like9" value="0" readonly></button>
+		<button id="btn10" onclick="liked('like10', 'btn10')">Like<input type="number" id="like10" value="0" readonly></button>
+	</div>
+
+	<hr>
+
+	<button id="devView">Show dev view ></button>
+	<div id="unpolished">
+		<h1>Like counter</h1>
+		<div id="main-counter">
+			<label>No of likes:</label>
+			<input type="number" id="display" value="0" readonly>
+		</div>
+		<div id="sub-counter">
+		<button onclick="likeClicked('sub1')">Account #1
+			<input type="number" id="sub1" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub2')">Account #2
+			<input type="number" id="sub2" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub3')">Account #3
+			<input type="number" id="sub3" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub4')">Account #4
+			<input type="number" id="sub4" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub5')">Account #5
+			<input type="number" id="sub5" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub6')">Account #6
+			<input type="number" id="sub6" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub7')">Account #7
+			<input type="number" id="sub7" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub8')">Account #8
+			<input type="number" id="sub8" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub9')">Account #9
+			<input type="number" id="sub9" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub10')">Account #10
+			<input type="number" id="sub10" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub11')">Account #11
+			<input type="number" id="sub11" value="0"  readonly>
+		</button>
+		<button onclick="likeClicked('sub12')">Account #12
+			<input type="number" id="sub12" value="0"  readonly>
+		</button>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="polished.js"></script>
+</body>
+</html>
